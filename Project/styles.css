@@ -76,8 +76,6 @@ header{
     border-radius: 2rem;
 } */
 
-/*hello
-*/
 .logo{
     font-size: 15px;
     align-items: center;
@@ -138,25 +136,18 @@ header{
 
 .service.section{
     display: flex;
-    justify-content: center;
-}
-.service-container{
-    display: flex;
     flex-direction: column;
     align-items: center;
     text-align:center;
 }
 
-.service-container-box{
+.service-container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    text-align:center;
-    width:100%;
-    justify-content: space-evenly;
-    margin: 20px;
+    flex-basis: 20%;
+    justify-content: space-around;
 }
+
 
 h2{
     font-size: 50px;
@@ -165,37 +156,50 @@ h2{
     margin: 20px;
     text-align: center;
 }
+
 .service-box{
     color: black;
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    width:  350px;
-    height: 360px;
-    margin: 10px;
+    width:  250px;
+    height: auto;
+    margin: 20px;
     border-radius: 50px;
 }
+
+
 
 .bx-service{
     margin: 20px;
     font-size: 200px;
 } 
-
-.service-container-box p{
-    font-size: 40px;
-    font-weight: normal;
+.service-box p{
+    padding:20px;
 }
 .products.section{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column; 
+    flex-direction: row; 
+    flex-basis: 25%;
+    justify-content: center;
     margin: 20px;
 }
-.products.section h1,
+
+.service.section h1, .products.section h1,
 h1 {
     color: white;
     font-family: 'Hexaframe Normal', sans-serif;
     font-size: 40px;
     font-weight: 1000; 
+    flex-basis: 100%;
+    margin: 20px 0px 20px;
 }
+
+.service.section h1, .products.section h1{
+    text-align: center;
+}
+
 
 .product-container-box h2{
     font-size: 20px;
@@ -207,7 +211,6 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row; 
     justify-content: space-around;
-    gap:20px;
     color:black;
     margin:15px;
 }
