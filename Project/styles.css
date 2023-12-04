@@ -1,0 +1,246 @@
+/* Import external stylesheet */
+@import url("font/stylesheet.css");
+
+/* Define font face */
+@font-face {
+    font-family: 'Hexaframe Normal';
+    src: url('font/HexaframeCF-Regular.woff2') format('woff2'),
+         url('font/HexaframeCF-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+body{
+   color:rgb(239, 237, 237); 
+   background-color: rgb(6, 6, 6);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 3rem 0 2rem;
+    display: flex;
+}
+
+.container {
+    max-width: 1060px;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(34, 138, 224);
+    padding: 17px 20px;
+    border-radius: 2rem;
+}
+
+.nav a{
+    color: rgb(22, 22, 22);
+    margin: 0 10px 0 10px;
+}
+
+.bx {
+    color: rgb(10, 10, 10);
+}
+
+/* .nav a:hover{
+    background: rgba(213, 30, 30, 0.466);
+    padding: 6px;
+    border-radius: 2rem;
+} */
+
+/*hello
+*/
+.logo{
+    font-size: 15px;
+    align-items: center;
+}
+
+.home {
+    margin: 20px 20px 20px 0;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    flex-wrap: nowrap; /* This ensures that the items won't wrap to the next line */
+}
+
+.home img {
+    width: 100%;
+    height: auto;
+    min-width: 360px;
+    flex: 1; /* This will make the image take up the available space */
+}
+
+.home-text {
+    padding-left: 50px;
+    flex: 1; 
+}
+
+
+.home.section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-text h1{
+    font-family: 'Hexaframe Normal', sans-serif;
+    font-size: 50px;
+    font-weight: 1000px;
+    color: white;
+}
+
+.home-text p{
+    margin: 20px 0
+}
+
+.btn{
+    background: rgba(213, 30, 30, 0.466);
+    display: flex;
+    max-width: 130px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 2rem;
+    margin-left: 10px;
+}
+
+.bx-down-arrow-alt{
+    color: white;
+    rotate: -90deg;
+}
+
+
+
+.service.section{
+    display: flex;
+    justify-content: center;
+}
+.service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+.service-container-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align:center;
+    width:100%;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 1000px;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+.service-box{
+    color: black;
+    background-color: white;
+    width:  350px;
+    height: 360px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.bx-service{
+    margin: 20px;
+    font-size: 200px;
+} 
+
+.service-container-box p{
+    font-size: 40px;
+    font-weight: normal;
+}
+.products.section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    margin: 20px;
+}
+.products.section h1,
+h1 {
+    color: white;
+    font-family: 'Hexaframe Normal', sans-serif;
+    font-size: 40px;
+    font-weight: 1000; 
+}
+
+.product-container-box h2{
+    font-size: 20px;
+    color: black
+}
+
+.products.section > *{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: space-around;
+    gap:20px;
+    color:black;
+    margin:15px;
+}
+
+.product-container-box{
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 2rem;
+    max-width: 300px;
+    min-width: 300px;
+}
+
+.product-container-box img{
+    height: 300px;
+}
+
+.product-box .heart-icon{
+    position: relative;
+    font-size: 30px;
+    top: -10px;
+    left: -110px;
+    color:rgb(207, 29, 29);
+}
+
+.product-info span{
+    color: rgb(178, 185, 31)
+}
+
+.product-info{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+}
