@@ -18,13 +18,217 @@
                     <a href="home" class="nav-link">Home</a>
                     <a href="home" class="nav-link">Services</a>
                     <a href="home" class="nav-link">Products</a>
-                    <a href="home" class="nav-link">Creator</a>
-                    <a href="home" class="nav-link">Reviews</a>
                 </div>
 
                 <div class="icons">
-                    <a href="#"><i class='bx bxs-cart'></i></a>
-                    <a href="#"><i class='bx bxs-user'></i></a>
+                    <button onclick="toggleCart()"><i class='bx bxs-cart'></i></button>
+                    <div class="total-quantity">0</div>
+                </div>
+
+                <div class="cart">
+                    <h2>CART</h2>
+                    <div class="cart-list">
+                        <div class="item 1" id="product1">
+                            <img src="images/products-1.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product1')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product1')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 2" id="product2">
+                            <img src="images/products-2.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product2')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product2')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 3" id="product3">
+                            <img src="images/products-3.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product3')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product3')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 4" id="product4">
+                            <img src="images/products-4.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product4')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product4')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 5" id="product5">
+                            <img src="images/products-5.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product5')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product5')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 6" id="product6">
+                            <img src="images/products-6.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product6')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product6')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 7" id="product7">
+                            <img src="images/products-7.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product7')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product7')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 8" id="product8">
+                            <img src="images/products-8.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product8')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product8')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 9" id="product9">
+                            <img src="images/products-9.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product9')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product9')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 10" id="product10">
+                            <img src="images/products-10.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product10')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product10')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 11" id="product11">
+                            <img src="images/products-11.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product11')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="incrementQuantity('product11')">+</button>
+                            </div>
+                        </div>
+                        <div class="item 12" id="product12">
+                            <img src="images/products-12.png" alt="">
+                            <div class="content">
+                                <div class="name">
+                                    Steelbone Armor
+                                </div>
+                                <div class="price">
+                                    P1500/1 product
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <button onclick="decrementQuantity('product12')">-</button>
+                                <span class = "value">1</span>
+                                <button onclick="decrementQuantity('product12')">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="buttons">
+                        <button onclick="toggleCart()">CLOSE</button>
+                        <div class="checkout">
+                            <a href="checkout.html">
+                                CHECKOUT
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -87,7 +291,7 @@
                     <h2>Steelbone Armor</h2><br/>
                     <div class="product-info">
                         <span>P1400</span>
-                        <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                        <button onclick="operation1('product1')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -100,7 +304,7 @@
                     <h2>Iron Wrecker</h2><br/>
                     <div class="product-info">
                         <span>P2400</span>
-                        <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                        <button onclick="operation1('product2')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -113,7 +317,7 @@
                     <h2>Tiekui Dual Pilot Mecha</h2>
                     <div class="product-info">
                         <span>P3000</span>
-                        <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                        <button onclick="operation1('product3')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -127,7 +331,7 @@
                     <h2>JT1033 GOD OF WAR 86</h2>
                     <div class="product-info">
                         <span>P3000</span>
-                        <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                        <button onclick="operation1('product4')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -141,7 +345,7 @@
                     <h2>JT000 Steelbone H-03</h2><br/>
                     <div class="product-info">
                         <span>P1400</span>
-                        <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                        <button onclick="operation1('product5')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -154,7 +358,7 @@
                     <h2>JT2207 Iron Wrecker</h2><br/>
                     <div class="product-info">
                         <span>P2400</span>
-                        <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                        <button onclick="operation1('product6')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -167,7 +371,7 @@
                     <h2>Tiekui Dual Pilot Mecha 02</h2>
                     <div class="product-info">
                         <span>P3000</span>
-                        <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                        <button onclick="operation1('product7')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -180,7 +384,7 @@
                     <h2>Iron Wrecker 09</h2><br/>
                     <div class="product-info">
                         <span>P3000</span>
-                        <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                        <button onclick="operation1('product8')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
             </div>
@@ -193,7 +397,7 @@
                         <h2>Mecha Purge 01</h2><br/>
                         <div class="product-info">
                             <span>P1400</span>
-                            <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                            <button onclick="operation1('product9')"><i class="bx bx-shopping-bag"></i></button>
                         </div>
                     </div>
                 </div>
@@ -206,7 +410,7 @@
                         <h2>JT3242 Fear 06 Mecha</h2><br/>
                         <div class="product-info">
                             <span>P2400</span>
-                            <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                            <button onclick="operation1('product10')"><i class="bx bx-shopping-bag"></i></button>
                         </div>
                     </div>
                 </div>
@@ -219,7 +423,7 @@
                         <h2>JT0203 Steel Bone Mecha Sandy</h2>
                         <div class="product-info">
                             <span>P3000</span>
-                            <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                            <button onclick="operation1('product11')"><i class="bx bx-shopping-bag"></i></button>
                         </div>
                     </div>
                 </div>
@@ -232,7 +436,7 @@
                         <h2>JT2580 Zeus</h2><br/>
                         <div class="product-info">
                             <span>P3000</span>
-                            <button onclick="operation1()"><i class="bx bx-shopping-bag"></i></button>
+                            <button onclick="operation1('product12')"><i class="bx bx-shopping-bag"></i></button>
                         </div>
                     </div>
                 </div>
