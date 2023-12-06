@@ -15,14 +15,16 @@
                 <a href="#" class="logo">MORTIS</a>
 
                 <div class="navbar">
-                    <a href="home" class="nav-link">Home</a>
-                    <a href="home" class="nav-link">Services</a>
-                    <a href="home" class="nav-link">Products</a>
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#service" class="nav-link">Services</a>
+                    <a href="#product" class="nav-link">Products</a>
+                    <a href="#review" class="nav-link">Reviews</a>
+                    
                 </div>
 
                 <div class="icons">
                     <button onclick="toggleCart()"><i class='bx bxs-cart'></i></button>
-                    <div class="total-quantity">0</div>
+                    <div class="total-quantity" id="total-quantity-icons">0</div>
                 </div>
 
                 <div class="cart">
@@ -35,7 +37,7 @@
                                     Steelbone Armor
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P2000/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -48,7 +50,7 @@
                             <img src="images/products-2.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    Iron Wrecker
                                 </div>
                                 <div class="price">
                                     P1500/1 product
@@ -64,10 +66,10 @@
                             <img src="images/products-3.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    Tiekui Dual Pilot Mecha
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P3000/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -80,10 +82,10 @@
                             <img src="images/products-4.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    JT1033 GOD OF WAR 86
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P2500/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -96,10 +98,10 @@
                             <img src="images/products-5.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    JT000 Steelbone H-03
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P2400/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -112,10 +114,10 @@
                             <img src="images/products-6.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    JT2207 Iron Wrecker
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P2250/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -128,10 +130,10 @@
                             <img src="images/products-7.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    Tiekui Dual Pilot Mecha 02
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P3500/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -144,10 +146,10 @@
                             <img src="images/products-8.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    Iron Wrecker 09
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P1000/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -160,10 +162,10 @@
                             <img src="images/products-9.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    Mecha Purge 01
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P2000/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -176,10 +178,10 @@
                             <img src="images/products-10.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    JT3242 Fear 06 Mecha
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P1200/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -192,7 +194,7 @@
                             <img src="images/products-11.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    JT0203 Steel Bone Mecha Sandy
                                 </div>
                                 <div class="price">
                                     P1500/1 product
@@ -208,10 +210,10 @@
                             <img src="images/products-12.png" alt="">
                             <div class="content">
                                 <div class="name">
-                                    Steelbone Armor
+                                    JT2580 Zeus
                                 </div>
                                 <div class="price">
-                                    P1500/1 product
+                                    P2700/1 product
                                 </div>
                             </div>
                             <div class="quantity">
@@ -224,7 +226,7 @@
                     <div class ="buttons">
                         <button onclick="toggleCart()">CLOSE</button>
                         <div class="checkout">
-                            <a href="checkout.html">
+                            <a href="checkout.html" onclick="calculate_total()">
                                 CHECKOUT
                             </a>
                         </div>
@@ -243,7 +245,7 @@
                 <p>
                     Order any of our unique and custom figurine! Affordable and Highquality!
                 </p>
-                <a href="#" class="btn">
+                <a href="#product" class="btn">
                     <span>Shop Now!</span>
                     <i class='bx bx-down-arrow-alt' ></i>
                 </a>
@@ -255,7 +257,7 @@
         </section>
 
         <section class="service section" id="service">
-            <h1>Topnotch customer service</h1>
+            <h1>Our avialable services</h1>
             <div class="service-container">
                 <div class="service-box">
                     <i class='bx bxs-hot bx-service'></i>
@@ -286,11 +288,10 @@
                 <!--Product 1-->
             <div class="product-container-box">
                 <div class="product-box">
-                    <i class="bx bx-heart heart-icon"></i>
                     <img src="images/products-1.png" alt="">
                     <h2>Steelbone Armor</h2><br/>
                     <div class="product-info">
-                        <span>P1400</span>
+                        <span>P2000</span>
                         <button onclick="operation1('product1')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
@@ -299,11 +300,10 @@
             <!--Product 2-->
             <div class="product-container-box">
                 <div class="product-box">
-                    <i class="bx bx-heart heart-icon"></i>
                     <img src="images/products-2.png" alt="">
                     <h2>Iron Wrecker</h2><br/>
                     <div class="product-info">
-                        <span>P2400</span>
+                        <span>P1500</span>
                         <button onclick="operation1('product2')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
@@ -312,7 +312,6 @@
             <!--Product 3-->
             <div class="product-container-box">
                 <div class="product-box">
-                    <i class="bx bx-heart heart-icon"></i>
                     <img src="images/products-3.png" alt="">
                     <h2>Tiekui Dual Pilot Mecha</h2>
                     <div class="product-info">
@@ -325,12 +324,11 @@
             <!--Product 4-->
             <div class="product-container-box">
                 <div class="product-box">
-                    <i class="bx bx-heart heart-icon"></i>
                     <img src="images/products-4.png" alt="">
 
                     <h2>JT1033 GOD OF WAR 86</h2>
                     <div class="product-info">
-                        <span>P3000</span>
+                        <span>P2500</span>
                         <button onclick="operation1('product4')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
@@ -340,11 +338,10 @@
             <!--Product 5-->
             <div class="product-container-box">
                 <div class="product-box">
-                    <i class="bx bx-heart heart-icon"></i>
                     <img src="images/products-5.png" alt="">
                     <h2>JT000 Steelbone H-03</h2><br/>
                     <div class="product-info">
-                        <span>P1400</span>
+                        <span>P2400</span>
                         <button onclick="operation1('product5')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
@@ -353,11 +350,10 @@
             <!--Product 6-->
             <div class="product-container-box">
                 <div class="product-box">
-                    <i class="bx bx-heart heart-icon"></i>
                     <img src="images/products-6.png" alt="">
                     <h2>JT2207 Iron Wrecker</h2><br/>
                     <div class="product-info">
-                        <span>P2400</span>
+                        <span>P2250</span>
                         <button onclick="operation1('product6')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
@@ -366,11 +362,10 @@
             <!--Product 7-->
             <div class="product-container-box">
                 <div class="product-box">
-                    <i class="bx bx-heart heart-icon"></i>
                     <img src="images/products-7.png" alt="">
                     <h2>Tiekui Dual Pilot Mecha 02</h2>
                     <div class="product-info">
-                        <span>P3000</span>
+                        <span>P3500</span>
                         <button onclick="operation1('product7')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
@@ -379,11 +374,10 @@
             <!--Product 8-->
             <div class="product-container-box">
                 <div class="product-box">
-                    <i class="bx bx-heart heart-icon"></i>
                     <img src="images/products-8.png" alt="">
                     <h2>Iron Wrecker 09</h2><br/>
                     <div class="product-info">
-                        <span>P3000</span>
+                        <span>P1000</span>
                         <button onclick="operation1('product8')"><i class="bx bx-shopping-bag"></i></button>
                     </div>
                 </div>
@@ -392,11 +386,10 @@
                 <!--Product 9-->
                 <div class="product-container-box">
                     <div class="product-box">
-                        <i class="bx bx-heart heart-icon"></i>
                         <img src="images/products-9.png" alt="">
                         <h2>Mecha Purge 01</h2><br/>
                         <div class="product-info">
-                            <span>P1400</span>
+                            <span>P2000</span>
                             <button onclick="operation1('product9')"><i class="bx bx-shopping-bag"></i></button>
                         </div>
                     </div>
@@ -405,11 +398,10 @@
                 <!--Product 10-->
                 <div class="product-container-box">
                     <div class="product-box">
-                        <i class="bx bx-heart heart-icon"></i>
                         <img src="images/products-10.png" alt="">
                         <h2>JT3242 Fear 06 Mecha</h2><br/>
                         <div class="product-info">
-                            <span>P2400</span>
+                            <span>P1200</span>
                             <button onclick="operation1('product10')"><i class="bx bx-shopping-bag"></i></button>
                         </div>
                     </div>
@@ -418,11 +410,10 @@
                 <!--Product 11-->
                 <div class="product-container-box">
                     <div class="product-box">
-                        <i class="bx bx-heart heart-icon"></i>
                         <img src="images/products-11.png" alt="">
                         <h2>JT0203 Steel Bone Mecha Sandy</h2>
                         <div class="product-info">
-                            <span>P3000</span>
+                            <span>P1500</span>
                             <button onclick="operation1('product11')"><i class="bx bx-shopping-bag"></i></button>
                         </div>
                     </div>
@@ -431,11 +422,10 @@
                 <!--Product 12-->
                 <div class="product-container-box">
                     <div class="product-box">
-                        <i class="bx bx-heart heart-icon"></i>
                         <img src="images/products-12.png" alt="">
                         <h2>JT2580 Zeus</h2><br/>
                         <div class="product-info">
-                            <span>P3000</span>
+                            <span>P2700</span>
                             <button onclick="operation1('product12')"><i class="bx bx-shopping-bag"></i></button>
                         </div>
                     </div>
@@ -443,13 +433,62 @@
             
         </section>
 
+        <section class="review section" id="review">
+            <div class="reviews-container">
+                <h1>Our Notable Reviews </h1>
+                <div class="review-box">
+                    <div class="section1">
+                        <img src="images/products-1.png" alt="">
+                        <div class="row2">
+                            <h2>Person 1</h2>
+                            <span>The figurine I received was perfect</span>
+                        </div>
+                    </div>
+                    <div class="section2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita tenetur. Molestias dolores quas, id incidunt unde libero accusantium reiciendis inventore quasi eos illum quidem, consectetur tempora veniam maiores voluptatibus.
+                        </p>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="section1">
+                        <img src="images/products-1.png" alt="">
+                        <div class="row2">
+                            <h2>Person 2</h2>
+                            <span>Late Delivery but worth it</span>
+                        </div>
+                    </div>
+                    <div class="section2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita tenetur. Molestias dolores quas, id incidunt unde libero accusantium reiciendis inventore quasi eos illum quidem, consectetur tempora veniam maiores voluptatibus.
+                        </p>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="section1">
+                        <img src="images/products-1.png" alt="">
+                        <div class="row2">
+                            <h2>Person 1</h2>
+                            <span>Will order more in the future!</span>
+                        </div>
+                    </div>
+                    <div class="section2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, expedita tenetur. Molestias dolores quas, id incidunt unde libero accusantium reiciendis inventore quasi eos illum quidem, consectetur tempora veniam maiores voluptatibus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
         <section class="footer section">
             <div class="footer-box">
                 <a href="#" class="logo">MORTIS</a>
 
                 <div class="news-letter-box">
-                    <input placeholder="Enter email here" type="text" class="input-box">
-                    <button>Subscribe</button>
+                    <input placeholder="Enter an email for a newsletter" type="text" class="input-box" id="newsletter-input">
+                    <button onclick="subscribe()">Subscribe</button>
                 </div>
 
                 <div class="social-box">
