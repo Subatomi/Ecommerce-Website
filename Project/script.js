@@ -94,7 +94,11 @@ function updateTotalQuantity(newQuantity) {
     if (totalQuantityElement) {
         let currentQuantity = parseInt(totalQuantityElement.innerText);
         totalQuantityElement.innerText = (currentQuantity + newQuantity).toString();
+        if(currentQuantity >= 0){
+            totalQuantityElement.innerTex = "0";
+        }
     }
+    
 }
 
 function updateCart() {
@@ -125,6 +129,41 @@ function subscribe(){
 
     alert("Your email "+inputValue + " will shortly be sent a confirmation email");
 }
+
+function checkout_op(){
+    let storedTotalQuantity = localStorage.getItem('totalQuantity');
+    let storedTotalPrice = localStorage.getItem('totalPrice');
+    let name_input = (document.getElementById('ch-name')).value;
+    let phone_input = (document.getElementById('ch-phone')).value;
+    let address_input = (document.getElementById('ch-address')).value;
+
+    alert("Name: " + name_input + "\nPhone: " + phone_input + "\nAddress: " + address_input + "\nTotal Quantity: P" + storedTotalQuantity.toString() + "\nTotal Price: " + storedTotalPrice.toString() + "\nThis will served as a receipt");
+}
+
+
+function changeColor(productId, isHovered) {
+    let productContainer = document.getElementById(productId);
+    let productInfo = productContainer.querySelector('.product-info');
+    let spanElement = productInfo.querySelector('span');
+  
+    if (isHovered) {
+      productContainer.style.background = 'linear-gradient(#f0eded, #f0eded50%, #e74c3c 50%, #e74c3c)';
+      productContainer.style.backgroundSize = '100% 200%';
+      productContainer.style.transition = 'background 1s';
+      productContainer.style.backgroundPosition = '100% 100%';
+      spanElement.style.color = 'white';
+      spanElement.style.transition = '1ms';
+    } else {
+        productContainer.style.background = 'linear-gradient(#ffffff, #ffffff 50%, #e74c3c 50%, #e74c3c)';
+        productContainer.style.backgroundSize = '100% 200%';
+        productContainer.style.transition = 'background 1s';
+        productContainer.style.backgroundPosition = '0% 0%';
+        spanElement.style.color = 'green';
+        spanElement.style.transition = '3s';
+    }
+  }
+  
+
 
 document.addEventListener('DOMContentLoaded', function() {
     updateCheckoutPage();
