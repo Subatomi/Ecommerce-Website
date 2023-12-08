@@ -77,6 +77,19 @@ header{
     transition: width 0.5s ease; 
 }
 
+.nav-link, .icons button, .navbar a {
+    transition: all .2s ease-in-out;
+}
+
+.nav-link:hover, .icons button:hover, .navbar a:hover {
+    transform: scale(1.1);
+    font-size: 30px;
+}
+
+.service-box:hover{
+    transform: scale(1.1);
+}
+
 
 .icons{
     display: flex;
@@ -198,12 +211,6 @@ header{
 }
 
 
-/* .nav a:hover{
-    background: rgba(213, 30, 30, 0.466);
-    padding: 6px;
-    border-radius: 2rem;
-} */
-
 .logo{
     font-size: 15px;
     align-items: center;
@@ -228,6 +235,10 @@ header{
 .home-text {
     padding-left: 50px;
     flex: 1; 
+}
+
+.home-text a:hover{
+    transform: scale(1.1);
 }
 
 
@@ -308,8 +319,6 @@ h2{
     width: 100px;
 }
 
-.service-box p{
-}
 .products.section{
     display: flex;
     flex-wrap: wrap;
@@ -345,35 +354,44 @@ h1 {
     flex-direction: row; 
     justify-content: space-around;
     color:black;
-    margin:15px;
+    margin:20px;
 }
 
-.product-container-box{
+.product-container-box {
     background-color: white;
     text-align: center;
     padding: 30px;
     border-radius: 2rem;
     max-width: 300px;
     min-width: 300px;
-    &.grow {
-        transition: all .2s ease-in-out;
-      }
-        &:hover {
-          transform: scale(1.1);
-        }
+    transition: all .2s ease-in-out;
+    box-shadow: 10px 9px 6px 0px #3d3d3d;
 }
+
+.product-container-box:hover {
+    transform: scale(1.1);
+    background: linear-gradient(#f0eded, #f0eded, #e74c3c 50%, #e74c3c);
+    background-size: 100% 200%;
+    transition: background 2s;
+    background-position: 100% 100%;
+}
+
+.product-container-box:hover .product-box h2,
+.product-container-box:hover .product-box span,
+.product-container-box:hover .product-box i {
+    color: #fff;
+}
+
+.product-container-box button:hover i{
+    transform: scale(2);
+    position: relative;
+    top: -10px;
+}
+
 
 .product-container-box img{
     height: 300px;
 
-}
-
-.product-box .heart-icon{
-    position: relative;
-    font-size: 30px;
-    top: -10px;
-    left: -110px;
-    color:rgb(207, 29, 29);
 }
 
 .product-info span{
@@ -415,7 +433,13 @@ h1 {
     width: 440px;
     border-radius: 2rem;
     color: black;
+    box-shadow: 10px 9px 6px 0px #3d3d3d;
 }
+
+.review-box i:hover {
+    transform: scale(1.5);
+}
+
 
 
 .reviews-container img {
@@ -551,6 +575,10 @@ button{
     justify-content: space-around;
     margin-top: 10px;
     width: 90%
+}
+
+.social-box a:hover{
+    transform: scale(1.1);
 }
 
 .social-box i{
