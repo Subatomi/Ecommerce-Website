@@ -436,8 +436,8 @@ h1 {
     box-shadow: 10px 9px 6px 0px #3d3d3d;
 }
 
-.review-box i:hover {
-    transform: scale(1.5);
+.review-box:hover {
+    transform: scale(1.1);
 }
 
 
@@ -578,7 +578,7 @@ button{
 }
 
 .social-box a:hover{
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .social-box i{
