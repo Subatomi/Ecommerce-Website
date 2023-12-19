@@ -1,0 +1,1032 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url(https://db.onlinewebfonts.com/c/b4b59e48a26b72516b21a92326426229?family=Linotype+Projekt+Regular);
+@import url(https://db.onlinewebfonts.com/c/ba21495916ce39f086a0b63328e9fc59?family=Linotype+Projekt+Bold);
+@import url(https://db.onlinewebfonts.com/c/4c19fc875e7ba1e6831129de3ab5ac0b?family=Retro+Gaming);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+background: #1a1a1a;
+height: 80px;
+width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo {
+color: white;
+font-size: 35px;
+line-height: 80px;
+padding: 0 50px;
+font-weight: bold;
+}
+
+nav ul{
+float: right;
+padding-right: 50px;
+}
+
+nav ul li{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+
+nav ul li a{
+color: white;
+font-size: 17px;
+padding:10px;
+text-transform: uppercase;
+}
+
+nav ul li.login a{
+    
+    width: 120px;
+    padding:10px;
+    background-color: #d05150;
+    border-radius: 3px;
+    text-align: center;
+    
+}
+
+
+li a.active,li a:hover{
+box-shadow: 4px 3px 0px .5px #fefefe;
+transition: .5s;
+}
+
+.checkbtn{
+font-size: 30px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+
+#check{
+display: none;
+}
+
+body{
+    height: calc(100vh - 80px);
+    background-image: url(https://web-static.hg-cdn.com/endfield/official/oversea/_next/static/media/blockTextureW.26de9170.jpg);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.home{
+    display: flex;
+    margin: 20px 40px 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px 40px 0px 40px;
+    align-items: flex-start;
+}
+.home h1 {
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    flex-basis: 40%;
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Novecento WideBold";
+    background-image: linear-gradient(-45deg,transparent,transparent 20.5805011712%,#000000 0,#000 29.4194988288%,transparent 0,transparent 70.5805011712%,#000 0,#000 79.4194988288%,transparent 0,transparent);
+    background-size: 0.5rem 0.5rem;
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-clip: text;
+    color: transparent;
+    font-size: max(12vw, 30px);
+    max-width: 100%; 
+}
+
+.title-content a{
+    background: rgba(165, 19, 19, 0.753);
+    display: flex;
+    color: white;
+    max-width: 100px;
+    justify-content: center;
+    padding: 10px;
+    /* border-radius: 2rem; */
+    margin-top: 50px;
+    margin-right: 80px;
+}
+
+.title-content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.home img {
+    height: auto;
+    max-width: 700px;
+    flex-basis: 60%;
+}
+
+
+.content h4{
+    font-weight: normal;
+    padding: 20px;
+}
+
+
+.basic.news{
+    background-image: url(https://web-static.hg-cdn.com/endfield/official/oversea/_next/static/media/blockTextureY.080166e7.jpg);
+    margin: 0px;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.basic.news h1{
+    text-align: center;
+    padding:20px;
+    font-family: 'Gilroy-ExtraBold', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform:translateX(-50%);
+}
+
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.footer-logo,.section-1, .section-2{
+    display: flex;
+    background-color: #1a1a1a;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer-links-1 a{
+    color: #6e6e6e
+    
+}
+
+
+.footer-links-1{
+    display: flex;
+
+}
+
+.footer-links-1 i{
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.footer-links-2{
+    display: flex;
+    column-gap: 2rem;
+    color: #fff;
+}
+
+.footer-links-2 a{
+    font-family: "Linotype Projekt Regular";
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-logo a, .footer-logo{
+    font-size: 30px;
+    color: #6c6c6c
+}
+
+.footer-logo{
+    font-size: 8px;
+    font-family: "Linotype Projekt Bold";
+}
+
+
+.about-section{
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding:40px;
+}
+
+.goals-p{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.about-section h1{
+    text-align: center;
+    font-family: "Retro Gaming";
+    font-size: 50px;
+    color: black;
+}
+
+.owner-section{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 20px;
+    column-gap: 20px;
+    background-color: white;
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000;
+}
+
+.owner-section p{
+    padding:20px;
+    background-color: white;
+    border: solid 2px black;
+    box-shadow: -4px -4px 1px 4px #000000;
+    font-size: 30px;
+ }
+
+.owner-section img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+        border: solid 2px black;
+    box-shadow: -4px -4px 1px 4px #000000;
+ }
+
+.owner-card{
+    display:  flex;
+    flex-direction: column;
+    
+    margin: 10px;
+    padding:20px;
+    align-items: center;
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000;
+} 
+
+.owner-card p{
+    display:  flex;
+    flex-direction: column;
+    padding:20px;
+} 
+
+.owner-card img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    
+}
+
+.coowner-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-box:hover{
+    transform: scale(1.1);
+}
+
+
+.service.section{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    
+}
+
+.service-container .one{
+    align-items: center;
+    justify-content:center;
+}
+
+
+.service-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: space-around;
+    margin:20px;
+}
+
+
+.product-box h2{
+    font-size: 50px;
+    font-weight: 1000px;
+    color: white;
+    margin: 20px;
+    text-align: center;
+}
+
+.service-box{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width:  160px;
+    padding: 20px;
+    /* border-radius: 5px; */
+    margin: 0px 50px 50px 20px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000;
+}
+
+
+.service-img{
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.service-img-1{
+    object-fit:cover;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+}
+
+.products.section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    flex-basis: 25%;
+    justify-content: center;
+    margin: 20px;
+}
+
+.service.section h1, .products.section h1,
+h1 {
+    color: white;
+    font-family: 'Hexaframe Normal', sans-serif;
+    font-size: 40px;
+    font-weight: 1000; 
+    flex-basis: 100%;
+    margin: 20px 0px 20px;
+}
+
+.service.section h1, .products.section h1{
+    text-align: center;
+    color: #000;
+}
+
+
+.product-container-box h2{
+    font-size: 20px;
+    color: black
+}
+
+.products.section > *{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    justify-content: space-around;
+    color:black;
+    margin:20px;
+}
+
+.product-container-box {
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+    /* border-radius: 2rem; */
+    max-width: 300px;
+    min-width: 300px;
+    transition: all .2s ease-in-out;
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000;
+}
+
+.product-container-box:hover {
+    transform: scale(1.1);
+    background: linear-gradient(#f0eded, #f0eded, #e74c3c 50%, #e74c3c);
+    background-size: 100% 200%;
+    transition: background 2s;
+    background-position: 100% 100%;
+}
+
+.product-container-box:hover .product-box h2,
+.product-container-box:hover .product-box span,
+.product-container-box:hover .product-box i {
+    color: #fff;
+}
+
+.product-container-box button:hover i{
+    transform: scale(2);
+    position: relative;
+    top: -10px;
+}
+
+
+.product-container-box img{
+    height: 250px;
+
+}
+
+.product-info span{
+    color: rgb(6, 114, 6)
+}
+
+.product-info{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    position: relative;
+    top: 10px;
+}
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.news-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin:40px;
+    row-gap: 20px;
+    
+}
+.news-div-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.news-section p{
+    margin:10px 40px 10px 20px;
+}
+
+.news-section-1 img{
+    max-width: 350px;
+    height: auto;
+    
+}
+
+.news-container img {
+    padding-top: 20px;
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.news-section-1,
+.news-container {
+    display: flex;
+    box-sizing: border-box;
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-div-2{
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000;
+    margin: 0px 60px 0px 60px;
+}
+
+.news-div-2 .container{
+    padding: 20px;
+}
+.news-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Retro Gaming";
+    font-size: 60px;
+    color: #000;
+}
+.news-section-1 {
+    flex-basis: 30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-section-1-2 {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.news-section-1 h2,
+.news-container h2{
+    color:#000;
+    font-family: "Retro Gaming";
+    text-align: left;
+    margin: 0px 0px 10px 0px;
+    font-size: 30px;
+}
+
+
+.login-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sign-up-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    max-width: 400px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000;
+    padding: 40px 30px 50px 30px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    padding: 30px;
+    max-width: 400px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000;
+    padding-bottom: 40px;
+}
+
+.sign-up-container h3,
+.login-container h3{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.sign-up-container button{}
+button.login-button{
+    color: white;
+    padding: 10px;
+    background-color:#d05150;
+    border-radius: 2rem;
+    width: 100px;
+    margin: 20px;
+}
+
+button.change-button{
+    color: #d05150;
+    font-size:15px;
+}
+
+.profile-section{
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-body{
+    /* background-image: url(https://web-static.hg-cdn.com/gryphline/user_center/assets/img/bg-h5.077c30.jpg); */
+    background-image: url(https://web-static.hg-cdn.com/gryphline/user_center/assets/img/menu-bg-h5.3d708c.jpg);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+
+
+}
+
+.profile-container{
+    width: 100%;
+    height: calc(100% - 180px);
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    margin: 40px;
+    justify-content: center;
+}
+
+.profile-menu{
+    flex-basis: 20%;
+    width:100%;
+    height: 100%;
+    border: solid 2px black;
+    background-image: url(https://web-static.hg-cdn.com/endfield/official/oversea/_next/static/media/blockTextureW.26de9170.jpg);
+    box-shadow: 5px 5px 1px 4px #ffffffac;
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-menu img{
+    max-width: 150px;
+    height: auto;
+    border: solid 2px black;
+    box-shadow: -5px -5px 1px 4px #ffffff6a;
+}
+
+.profile-menu div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding: 10px;
+    column-gap: 12px;
+}
+
+.profile-info{
+    flex-basis: 70%;
+    width:100%;
+    height: 100%;
+    background-image: url(https://web-static.hg-cdn.com/endfield/official/oversea/_next/static/media/blockTextureW.26de9170.jpg);
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #ffffffac;
+}
+
+.profile-sec{
+    margin: 20px;
+    border: solid 2px black;
+    box-shadow: -5px -5px 1px 4px #ffffffac;
+    padding:10px;
+    height: calc(100% - 70px);
+}
+
+.profile button{
+    margin-left: 10px;
+    padding:5px;
+    background-color: #d05150;
+    border-radius: 3px;
+    color: white;
+}
+
+.billing-section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 110%;
+    background-color: #6e6e6e;
+    padding: 40px;
+    column-gap: 20px;
+}
+
+.billing-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+.cc-container{
+    width: 100%;
+    max-height: 550px;
+    height: 100%;
+    box-shadow: -5px -5px 1px 4px #ffffffac;
+    background-color: #fff;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    align-content: flex-start;
+}
+
+
+
+.container-form{
+    background-color: #6c6c6c;
+    padding:20px;
+    border: solid 2px rgb(255, 255, 255);
+    box-shadow: 5px 5px 1px 4px #000000ac;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.cart-container{
+    width:100%;
+    background-color: #6c6c6c;
+    padding:20px;
+    border: solid 2px rgb(255, 255, 255);
+    box-shadow: 5px 5px 1px 4px #000000ac;
+    flex-basis: 68%;
+}
+
+.form{
+    background-image:url(https://web-static.hg-cdn.com/endfield/official/oversea/_next/static/media/blockTextureW.26de9170.jpg);
+    box-shadow: -5px -5px 1px 4px #000000ac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 70%;
+    padding: 20px;
+}
+.form h1{
+    text-align: center;
+    font-family: "Retro Gaming";
+    color: black;
+    flex-basis: 20%;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.form .group{
+    margin-bottom: 20px;
+}
+
+.form .group .two{
+    display: flex;
+    flex-direction: column;
+}
+.lower{
+    background-image:url(https://web-static.hg-cdn.com/endfield/official/oversea/_next/static/media/blockTextureW.26de9170.jpg);
+    box-shadow: -5px -5px 1px 4px #000000ac;
+    flex-basis: 30%;
+    padding: 20px;
+}
+
+.totalQuantity, .totalPrice,
+.button-process{
+    background-color: #d05150;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    width:100px;
+    text-align: center;
+}
+.group img{
+    align-self: center;
+    height: 100px;
+    width: 100px;
+}
+
+#OnlineContent{
+    flex-direction: column;
+    display: none;
+}
+
+
+.item-box img{
+    object-fit: contain;
+    height: 200px;
+}
+
+.item-box button i{
+    position: relative;
+    left: 100px;
+    color:#e74c3c;
+    font-size: 35px;
+
+}
+.item-box{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    height: 400px;
+    width: 250px;
+    border: solid 2px black;
+    box-shadow: 5px 5px 1px 4px #000000ac;
+    justify-content: space-between;
+}
+
+.item-box .div-Quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.item-box .div-Quantity button{
+    background-color: #d05150;
+    color: white;
+    padding:10px;
+    border-radius: 9px;
+}
+
+.lower .row{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.lower .row div:not(.totalPrice, .totalQuantity){
+    font-family: "Retro Gaming";
+    font-weight: bold;
+    font-size: medium;
+}
+
+.footer-email {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid white;
+    width: 20%;
+}
+
+.footer-email  input{
+    color: rgb(248, 248, 248);
+    padding: 4px 0 5px;
+    border: none;
+    background: none;
+    display: block;
+    width: 100%;
+    outline: none;
+    
+}
+
+.footer-email  input::placeholder {
+    color: rgb(219, 212, 212);
+    opacity: 0.7;
+}
+
+
+
+.footer-email  button{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 5px;
+}
+
+
+.footer-links-1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 20%;
+}
+
+.footer-links-1 a:hover{
+    transform: scale(1.5);
+}
+
+.footer-links-1 i{
+    font-size: 30px;
+    color: white;
+}
+
+
+
+@media (max-width: 952px){
+#logo{
+    font-size: 30px;
+    padding-left: 50px;
+}
+nav ul li a{
+    font-size: 16px;
+}
+}
+
+@media (max-width: 880px){
+.checkbtn{
+    display: block;
+}
+
+
+.home img {
+    max-width: 400px;
+}
+
+
+#logo{
+    font-size: 28px;
+}
+
+nav{
+    position: fixed;
+    width:100%;
+    top:0;
+    z-index: 1;
+}
+.content{
+    padding-top: 80px;
+}
+nav ul{
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url(https://web-static.hg-cdn.com/endfield/official/oversea/_next/static/media/menuBg.e4e7c97e.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 80px;
+    left: -120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+nav ul li:last-child {
+    margin-top: auto;
+    align-self: center;
+  }
+  
+
+nav ul li{
+    margin:30px;
+    line-height: 0;
+}
+
+li a:hover,li a.active{
+    box-shadow: none;
+    transition: none;
+    border-left: solid 5px #d05150;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+}
+
+.news-body{
+    background-image: url(https://web-static.hg-cdn.com/endfield/official/oversea/_next/static/media/blockTextureW.26de9170.jpg);
+
+}
+
+@font-face {
+    font-family: "Novecento WideBold";
+    src: url("https://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.eot");
+    src: url("https://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/67821e7ef9a2952d6e7757a6cae5a826.svg#Novecento WideBold")format("svg");
+}
+
+

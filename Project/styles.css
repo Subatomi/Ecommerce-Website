@@ -221,14 +221,13 @@ header{
     display: flex;
     align-items: center;
     column-gap: 10px;
-    flex-wrap: nowrap; /* This ensures that the items won't wrap to the next line */
 }
 
 .home img {
+    margin-top: 100px;
     width: 100%;
     height: auto;
-    min-width: 360px;
-    flex: 1; /* This will make the image take up the available space */
+    min-width: 50px;
     margin: 20px;
 }
 

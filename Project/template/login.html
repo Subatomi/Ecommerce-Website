@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body class="news-body">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" id="logo">MORTIS</a>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li class="login"><a href="login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+        <section class="login-section">
+            <div id="login-in-id" class="login-container">
+                <h3>Sign In</h3>
+                <hr/>
+                <div class="group">
+                    <label for="ch-email1">Email</label><br/>
+                    <input type="text" name="log-name" id="ch-email1">
+                </div>
+        
+                <div class="group"><br/>
+                    <label for="ch-pass1">Password</label><br/>
+                    <input type="text" name="log-pass" id="ch-pass1">
+                </div>
+                <button class="login-button" onclick="checkStorage()">Login</button>
+                <hr/>
+                <p>Create an account? <button class="change-button" onclick="changeLogin()">Register</button></p>
+            </div>
+        
+            <div id="sign-up-id" class="sign-up-container">
+                <h3>Sign Up</h3>
+                <hr/>
+                <div class="group">
+                    <label for="ch-email2">Email</label><br/>
+                    <input type="text" name="sign-name" id="ch-email2">
+                </div>
+        
+                <div class="group"><br/>
+                    <label for="ch-pass2">Password</label><br/>
+                    <input type="text" name="sign-pass" id="ch-pass2">
+                </div>
+                <button class="login-button" onclick="updateRegistry()">Register</button>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="section-1">
+                <div class="footer-links-1">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitch' ></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-discord-alt' ></i></a>
+                
+            </div>
+            <div class="footer-email">
+                <input placeholder="Enter an email for a newsletter" type="text" class="input-box" id="newsletter-input">
+                <button onclick="subscribe()">Subscribe</button>
+            </div>
+            </div>
+            <div class="section-2">
+            <div class="footer-links-2">
+                <a href="#">PRIVACY POLICY</a>
+                <p>|</p>
+                <a href="#">TERMS OF SERVICE</a>
+                <p>|</p>
+                <a href="#">CONTACT US</a>                
+            </div>
+            <div class="footer-logo">
+                <a href="#">MORTIS</a>
+                <p>Copyright C 2023-2024 MORTIS PTE. LTD All Rights Reserved</p>
+            </div>
+            </div>
+
+        </footer>
+        <script src="function.js"></script>
+    </body>
+</html>

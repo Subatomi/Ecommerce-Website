@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body class="profile-body">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" id="logo">MORTIS</a>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="partners.html">Partners</a></li>
+            </ul>
+        </nav>
+        <section class="profile-section">
+            <div class="profile-container">
+                <div class="profile-menu">
+                    <div>
+                        <i class='bx bxs-user'></i>
+                        <h3>Manage Account</h3>
+                    </div>
+                    <img src="images/theo.jpg">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-sec">
+                        <h3>User Info</h3>
+                        <div class="profile"><br/>
+                            <label for="email-hd">Email</label><br/>
+                            <input type="text" name="email-hd" id="ch-phone"><button>Reset</button>
+                        </div>
+                        <div class="profile"><br/>
+                            <label for="password-hd">Password</label><br/>
+                            <input type="text" name="password-hd" id="ch-phone"><button>Reset</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="section-1">
+                <div class="footer-links-1">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitch' ></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-discord-alt' ></i></a>
+                
+            </div>
+            <div class="footer-email">
+                <input placeholder="Enter an email for a newsletter" type="text" class="input-box" id="newsletter-input">
+                <button onclick="subscribe()">Subscribe</button>
+            </div>
+            </div>
+            <div class="section-2">
+            <div class="footer-links-2">
+                <a href="#">PRIVACY POLICY</a>
+                <p>|</p>
+                <a href="#">TERMS OF SERVICE</a>
+                <p>|</p>
+                <a href="#">CONTACT US</a>                
+            </div>
+            <div class="footer-logo">
+                <a href="#">MORTIS</a>
+                <p>Copyright C 2023-2024 MORTIS PTE. LTD All Rights Reserved</p>
+            </div>
+            </div>
+
+        </footer>
+        <script src="function.js"></script>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body class="news-body">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <a href="#" id="logo">MORTIS</a>
+            <ul>
+                <li><a href="main.html" onclick="saveDataBeforeUnload()">Home</a></li>
+                <li><a href="about.html"onclick="saveDataBeforeUnload()">About</a></li>
+                <li><a href="product.html"onclick="saveDataBeforeUnload()">Products</a></li>
+                <li><a href="news.html"onclick="saveDataBeforeUnload()">News</a></li>
+                <li><a href="partners.html"onclick="saveDataBeforeUnload()">Partners</a></li>
+                <li class="login"><a href="login.html"onclick="saveDataBeforeUnload()">LOG IN</a></li>
+            </ul>
+        </nav>
+        <section class="billing-section">
+            <div class="billing-container">
+                <div class="cart-container">
+                    <div id="here-container"class="cc-container">
+                    </div>
+                </div>
+                <div class="container-form">
+                    <div class="form">
+                        <h1>PAYMENT METHOD</h1>
+                        <div class="group">
+                            <label for="paymentMethod">Payment Method</label>
+                            <select id="paymentMethod" onchange="updateContent()">
+                                <option value="Card">Credit Card</option>
+                                <option value="Online">GCASH</option>
+                            </select>
+                        </div>
+
+                        <div id="CardContent" class="group one">
+                            <label for="name">Full Name</label><br/>
+                            <input type="text" name="name" id="cc-name"><br/><br/>
+                            <label for="number">Card Number</label><br/>
+                            <input type="text" name="pin" id="cc-number"><br/><br/>
+                            <label for="pin">Card Pin</label><br/>
+                            <input type="text" name="pin" id="cc-pin">
+                        </div>
+                
+                        <div id="OnlineContent" class="group two">
+                            <label for="number">Number</label><br/>
+                            <input type="text" name="email" id="cc-email"><br/><br/>
+                            <img src="images/frame.png">
+                        </div>
+                        <button class="button-process" onclick="processCart()">PROCESS</button>
+                    </div>
+    
+                    <div class="lower">
+                        <div class="row">
+                            <div>Total Quantity</div>
+                            <div id="checkoutX" class="totalQuantity">0</div>
+                        </div>
+                        <div class="row">
+                            <div>Total Price</div>
+                            <div id="checkoutY" class="totalPrice">0</div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer>
+            <div class="section-1">
+                <div class="footer-links-1">
+                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#"><i class='bx bxl-twitch' ></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+                
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-discord-alt' ></i></a>
+                
+            </div>
+            <div class="footer-email">
+                <input placeholder="Enter an email for a newsletter" type="text" class="input-box" id="newsletter-input">
+                <button onclick="subscribe()">Subscribe</button>
+            </div>
+            </div>
+            <div class="section-2">
+            <div class="footer-links-2">
+                <a href="#">PRIVACY POLICY</a>
+                <p>|</p>
+                <a href="#">TERMS OF SERVICE</a>
+                <p>|</p>
+                <a href="#">CONTACT US</a>                
+            </div>
+            <div class="footer-logo">
+                <a href="#">MORTIS</a>
+                <p>Copyright C 2023-2024 MORTIS PTE. LTD All Rights Reserved</p>
+            </div>
+            </div>
+
+        </footer>
+        <script src="function4Billing.js"></script>
+        <script src="function.js"></script>
+    </body>
+</html>
